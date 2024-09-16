@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body {
+    font-family: 'SUSE', sans-serif;
+  }
+
 img {
     max-width: 100%;
 }
@@ -14,12 +18,18 @@ img {
     max-width: 100%;
 }
 
+.page-header {
+    background-color: #136aa6;
+}
+
 .page-nav {
     display: flex;
-    margin: 10px;
-    padding: 10px 25px 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .page-nav__item {
     margin-left: 15px;
+    color: aqua;
+    font-family: ;
 }
