@@ -70,3 +70,7 @@ img {
    margin-bottom: 20px;
    display: block;
  }
+
+ #header-logo {
+    width: 30px
+ }
