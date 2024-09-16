@@ -34,32 +34,32 @@
     <main class="main-content container">
       <section class="container">
         <h2 class="title">Formulario de asistencia estudiante CESDE</h2>
-        <form action="controller">
+        <form class="main-content__form container" action="controller">
             <label for="studentName">
                 <span>Cual es tu primer nombre?</span>
                 <input type="text" id="studentName" placeholder="Ingrese su nombre">
             </label>
-
+            <br>
             <label for="studentLastName">
                 <span>Cual es tu primer apellido?</span>
                 <input type="text" id="studentLastName" placeholder="Ingrese su apellido">
             </label>
-
+            <br>
             <label for="studentDNI"></label>
                 <span>Ingresa tu documento de identidad</span>
                 <input type="text" id="studentDNI" placeholder="CC/TI/Sisben">
             </label>
-
+            <br>
             <label for="studentAttendenceDate">
               <span>Ingresa la fecha de asistencia</span>
               <input type="date" id="studentAttendenceDate">
             </label>
-
+            <br>
             <label for="studentAttendenceInitialTime">
               <span>Ingresa la hora de llegada a la institución</span>
               <input type="time" id="studentAttendenceInitialTime">
             </label>
-
+            <br>
             <label for="studentAttendenceDateFinalTime">
               <span>Ingresa la hora de salida de la institución</span>
               <input type="time" id="studentAttendenceDateFinalTime">
@@ -74,7 +74,7 @@
                     <option value="logicaProgramacion">Lógica de programación</option>
                 </select>
               </label> -->
-            
+              <br>
             <!-- Usamos la buena practica para hacer selects: -->
             <label for="studentCourses"></label>
               <span>Elige o digita el curso al que asististe:</span>
@@ -86,7 +86,7 @@
               </datalist>
             </label>
 
-
+            <br>
             <label for="studentAttendence">
               <span>Marcar Asistencia:</span>
               <input type="checkbox" name="studentAttendence" id="studentAttendence">
