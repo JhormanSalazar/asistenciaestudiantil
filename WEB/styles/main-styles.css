@@ -62,7 +62,7 @@ img {
     padding: 20px; /* Añade espacio interior */
     background-color: #f9f9f9; /* Fondo para el formulario */
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el formulario */
+    box-shadow: 0 4px 8px rgb(18, 48, 174) /* Sombra suave para el formulario */
 }
 
 .main-content h2{
