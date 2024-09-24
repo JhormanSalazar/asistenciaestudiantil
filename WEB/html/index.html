@@ -6,87 +6,111 @@
     <meta name="description" content="Empresa de automatización de tareas" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="nombre del autor" />
-    <link rel="stylesheet" href="../styles/main-styles.css">
-    <title>Empresa</title>
+    <link rel="stylesheet" href="../styles/main-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yo Asisto</title>
   </head>
   <body>
-    <header>
+    <header class="page-header container">
       <nav>
-        <ul>
+        <ul class="page-nav">
           <a href="index.html">
             <figure>
-              <img src="" alt="Enterprise logo" />
+              <img src="../media/header-logo.png" alt="logo" id="header-logo" />
             </figure>
           </a>
-          <a href="index.html"><li>NombreEmpresa</li></a>
-          <a href="contact.html"><li>Contactanos</li></a>
-          <a href="about.html"><li>Sobre Nosotros</li></a>
+          <a href="index.html"><li class="page-nav__item">Yo Asisto</li></a>
+          <a href="contact.html"><li class="page-nav__item">Contactanos</li></a>
+          <a href="about.html"
+            ><li class="page-nav__item">Sobre Nosotros</li></a
+          >
         </ul>
       </nav>
     </header>
 
-    <main class="main-content">
-      <section>
-        <h2>Formulario de asistencia estudiante CESDE</h2>
-        <form action="controller">
-            <label for="studentName">
-                <span>Cual es tu primer nombre?</span>
-                <input type="text" id="studentName" placeholder="Ingrese su nombre">
-            </label>
-
-            <label for="studentLastName">
-                <span>Cual es tu primer apellido?</span>
-                <input type="text" id="studentLastName" placeholder="Ingrese su apellido">
-            </label>
-
-            <label for="studentDNI"></label>
-                <span>Ingresa tu documento de identidad</span>
-                <input type="text" id="studentDNI" placeholder="CC/TI/Sisben">
-            </label>
-
-            <label for="studentAttendenceDate">
-              <span>Ingresa la fecha de asistencia</span>
-              <input type="date" id="studentAttendenceDate">
-            </label>
-
-            <label for="studentAttendenceInitialTime">
-              <span>Ingresa la hora de llegada a la institución</span>
-              <input type="time" id="studentAttendenceInitialTime">
-            </label>
-
-            <label for="studentAttendenceDateFinalTime">
-              <span>Ingresa la hora de salida de la institución</span>
-              <input type="time" id="studentAttendenceDateFinalTime">
-            </label>
-
-            <!-- Forma convencional de select: 
-             <label for="studentCourses"></label>
-                <span>Elige la materia a la que asististe:</span>
-                <select name="studentCourses" id="studentCourses">
-                    <option value="introduccionALaProgramacion">Introducción a la programación</option>
-                    <option value="baseDeDatos">Base de datos</option>
-                    <option value="logicaProgramacion">Lógica de programación</option>
-                </select>
-              </label> -->
-            
-            <!-- Usamos la buena practica para hacer selects: -->
-            <label for="studentCourses"></label>
-              <span>Elige o digita el curso al que asististe:</span>
-              <input list="courses">
-              <datalist id="courses">
-                <option value="Introduccion a la programacion"></option>
-                <option value="Logica de programacion"></option>
-                <option value="Bases de datos"></option>
-              </datalist>
-            </label>
-
-
-            <label for="studentAttendence">
-              <span>Marcar Asistencia:</span>
-              <input type="checkbox" name="studentAttendence" id="studentAttendence">
-            </label>
-
-            <input type="submit" value="Enviar Información">
+    <main class="main-content container">
+      <section class="container">
+        <h2 class="title">Formulario de asistencia estudiante CESDE</h2>
+        <form class="main-content__form container" action="controller">
+          <label for="studentName">
+            <span>Cual es tu primer nombre?</span>
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Ingrese su primer nombre"
+              autocomplete="name"
+            />
+          </label>
+          <br />
+          <label for="studentLastName">
+            <span>Cual es tu primer apellido?</span>
+            <input
+              type="text"
+              id="studentLastName"
+              placeholder="Ingrese su apellido"
+              autocomplete="family-name"
+            />
+          </label>
+          <br />
+          <label for="studentDNI">
+            <span>Ingresa tu documento de identidad</span>
+            <input
+              type="text"
+              id="studentDNI"
+              placeholder="CC/TI/Sisben"
+              autocomplete="off"
+            />
+          </label>
+          <br />
+          <label for="studentAttendenceDate">
+            <span>Ingresa la fecha de asistencia</span>
+            <input type="date" id="studentAttendenceDate" autocomplete="off" />
+          </label>
+          <br />
+          <label for="studentAttendenceInitialTime">
+            <span>Ingresa la hora de llegada a la institución</span>
+            <input
+              type="time"
+              id="studentAttendenceInitialTime"
+              autocomplete="off"
+            />
+          </label>
+          <br />
+          <label for="studentAttendenceDateFinalTime">
+            <span>Ingresa la hora de salida de la institución</span>
+            <input
+              type="time"
+              id="studentAttendenceDateFinalTime"
+              autocomplete="off"
+            />
+          </label>
+          <br />
+          <label for="studentCourses">
+            <span>Elige o digita el curso al que asististe:</span>
+            <input list="courses" autocomplete="off" />
+            <datalist id="courses">
+              <option value="Introduccion a la programacion"></option>
+              <option value="Logica de programacion"></option>
+              <option value="Bases de datos"></option>
+            </datalist>
+          </label>
+          <br />
+          <label for="studentAttendence">
+            <span>Marcar Asistencia:</span>
+            <input
+              type="checkbox"
+              name="studentAttendence"
+              id="studentAttendence"
+              autocomplete="off"
+            />
+          </label>
+          <br />
+          <input type="submit" value="Enviar Información" />
         </form>
       </section>
     </main>
