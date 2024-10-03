@@ -13,13 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    
     <title>Yo Asisto</title>
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header container-fluid">
       <nav>
         <ul class="page-nav">
-          <li>
+          <li >
             <a href="index.html">
               <figure>
                 <img
@@ -30,99 +31,93 @@
               </figure>
             </a>
           </li>
-          <li class="page-nav__item">
+          <li id="home-li" class="page-nav__item page-nav__item--active">
             <a href="index.html">Yo Asisto</a>
           </li>
-          <li class="page-nav__item">
+          <li id="contact-li" class="page-nav__item">
             <a href="contact.html">Contactanos</a>
           </li>
-          <li class="page-nav__item">
+          <li id="about-li" class="page-nav__item">
             <a href="about.html">Sobre Nosotros</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-content container">
-      <section class="container">
+    <main class="main-content container-fluid">
+      <section id="attendenceForm" class="container">
         <h2 class="title">Formulario de asistencia estudiante CESDE</h2>
         <form class="main-content__form container" action="controller">
-          <label for="studentName">
-            <span>Cual es tu primer nombre?</span>
+          <label for="studentFirstName">
+            <span>Cual es tu primer nombre?: </span>
             <input
               type="text"
-              id="studentName"
+              id="studentFirstName"
+              name="studentFirstName"
               placeholder="Ingrese su primer nombre"
               autocomplete="name"
+              class="form_input"
             />
           </label>
-          <br />
+          <hr>
           <label for="studentLastName">
-            <span>Cual es tu primer apellido?</span>
+            <span>Cual es tu primer apellido?: </span>
             <input
               type="text"
               id="studentLastName"
+              name="studentLastName"
               placeholder="Ingrese su apellido"
               autocomplete="family-name"
+              class="form_input"
             />
           </label>
-          <br />
+          <hr>
           <label for="studentDNI">
-            <span>Ingresa tu documento de identidad</span>
+            <span>Ingresa tu documento de identidad: </span>
             <input
               type="text"
               id="studentDNI"
+              name="studentDNI"
               placeholder="CC/TI/Sisben"
               autocomplete="off"
+              class="form_input"
             />
           </label>
-          <br />
+          <hr>
           <label for="studentAttendenceDate">
-            <span>Ingresa la fecha de asistencia</span>
-            <input type="date" id="studentAttendenceDate" autocomplete="off" />
+            <span>Ingresa la fecha de asistencia: </span>
+            <input type="date" id="studentAttendenceDate" name="studentAttendenceDate" autocomplete="off" class="form_input"/>
+            
           </label>
-          <br />
-          <label for="studentAttendenceInitialTime">
-            <span>Ingresa la hora de llegada a la institución</span>
-            <input
-              type="time"
-              id="studentAttendenceInitialTime"
-              autocomplete="off"
-            />
-          </label>
-          <br />
-          <label for="studentAttendenceDateFinalTime">
-            <span>Ingresa la hora de salida de la institución</span>
-            <input
-              type="time"
-              id="studentAttendenceDateFinalTime"
-              autocomplete="off"
-            />
-          </label>
-          <br />
+          <hr>
           <label for="studentCourses">
-            <span>Elige o digita el curso al que asististe:</span>
-            <input list="courses" autocomplete="off" />
+            <span>Elige o digita el curso al que asististe: </span>
+            <input list="courses" autocomplete="off" name="studentCourses" class="form_input"/>
             <datalist id="courses">
               <option value="Introduccion a la programacion"></option>
               <option value="Logica de programacion"></option>
               <option value="Bases de datos"></option>
             </datalist>
           </label>
-          <br />
-          <label for="studentAttendence">
+          <hr>
+          <label for="studentAttendenceBool">
             <span>Marcar Asistencia:</span>
             <input
               type="checkbox"
-              name="studentAttendence"
-              id="studentAttendence"
+              name="studentAttendenceBool"
+              id="studentAttendenceBool"
               autocomplete="off"
             />
           </label>
-          <br />
+          <hr>
           <input type="submit" value="Enviar Información" />
         </form>
       </section>
+
+      <button>toggle visibility</button>
     </main>
+
+    
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
