@@ -14,6 +14,13 @@ body{
     font-family: sans-serif;
     text-align: center;
 }
+
+.contactfoto{
+    height: 500px;
+    width: 100%;
+
+    
+}
 .form {
     font-family: sans-serif;
     text-decoration: dotted;
@@ -29,3 +36,6 @@ body{
     margin: 1.25rem auto;
 }
 
+.form label{
+    margin: 15px 10px ;
+}
