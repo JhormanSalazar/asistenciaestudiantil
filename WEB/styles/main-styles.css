@@ -121,3 +121,38 @@ img {
   flex-flow: row wrap;
 }
 
+/*Footer styles*/
+
+.footer {
+  display: flex;
+  background-color: #a594f9;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footer-item {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+.footer-item-title {
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: #1230ae;
+}
+
+.footer-item p {
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.footer-item p + span{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  color: #1230ae;
+}
