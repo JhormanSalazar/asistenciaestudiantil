@@ -6,14 +6,16 @@
     <meta name="description" content="Empresa de automatización de tareas" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="nombre del autor" />
-    <link rel="stylesheet" href="../styles/main-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/contact-styles.css">
+    <link rel="stylesheet" href="../styles/main-styles.css">
     <link
       href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <title>Contactanos</title>
+    
   </head>
   <body>
     <header class="page-header container">
@@ -42,7 +44,57 @@
         </ul>
       </nav>
     </header>
-    <h1>CONTACTANOS</h1>
-    <img src="" alt="">
+
+
+
+    <main>
+      <section class="principal">
+        <img src="../media/download.png" alt="">
+        <h2>PONTE EN CONTACTO</h2>
+        <h3>ingresa los datos a continuacion y nosotros nos pondremos en contacto contigo:</h3>
+        <form class="form">
+          <label for="contactStudentname">
+            <span>Cual es tu nombre?</span>
+            <input type="text" 
+            id="contactStudentname"
+            name="contactStudentname"
+            placeholder="Ingresa tu nombre completo"
+            autocomplete="name"
+            class="contact_forminput">
+          </label>
+
+          <label for="emailStudent">
+            <span>Cual es tu correo electronico?</span>
+            <input type="email" 
+            id="emailStudent"
+            name="emailStudent"
+            placeholder="Ingresa tu correo electronico"
+            autocomplete="email"
+            class="contact_forminput">
+          </label>
+
+          <label for="phoneStudent">
+            <span>Cual es tu numero de celular?</span>
+            <input type="tel" 
+            id="phoneStudent"
+            name="phoneStudent"
+            placeholder="Ingresa tu numero de telefono"
+            autocomplete="phone"
+            class="phoneStudent">
+          </label>
+
+          <label for="sedeStudent">
+            <span>En cual sede estas registrado?</span>
+            <input type="text" 
+            id="sedeStudent"
+            name="sedeStudent"
+            placeholder="Ingresa la sede donde estudias"
+            autocomplete="sede"
+            class="sedeStudent">
+          
+          </label>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
