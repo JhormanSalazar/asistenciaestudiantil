@@ -106,9 +106,9 @@ img {
   box-shadow: 0 0 5px rgb(18, 48, 174);
 }
 
-.main-content h2 {
+.main-content .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   display: block;
 }
 
